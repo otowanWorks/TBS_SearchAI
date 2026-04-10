@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京ビッグサイト イベント案内AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="layout">
+
+        <!-- 左パネル：チャット -->
+        <div class="chat-panel">
+            <div class="chat-header">
+                <div class="chat-header-icon">🏢</div>
+                <div>
+                    <div class="chat-header-title">東京ビッグサイト</div>
+                    <div class="chat-header-sub">イベント案内AI</div>
+                </div>
+            </div>
+
+            <div id="chatMessages"></div>
+
+            <div id="quickReplyArea"></div>
+
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="例：IT系のイベントを探して" />
+                <button id="sendBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- 右パネル：検索結果 -->
+        <div class="results-panel">
+            <div class="results-header">
+                <div id="resultsTitle" class="results-title">イベントを検索してみよう</div>
+                <div id="resultsCount" class="results-count"></div>
+            </div>
+            <div id="resultsGrid" class="results-grid"></div>
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">🔍</div>
+                <p>左のチャットでイベントについて<br>質問してみてください</p>
+                <p class="empty-hint">例：「4月に開催されるIT系のイベントは？」</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/api_id.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
