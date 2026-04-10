@@ -1,3 +1,4 @@
+<img width="1256" height="636" alt="TBS_SearchAI01" src="https://github.com/user-attachments/assets/600643b8-7ddd-4dc1-8851-7be76e7f806b" />
 # 東京ビッグサイト イベント案内AI
 
 miibo（会話AI）とRAG検索を組み合わせた、展示会・イベント検索インターフェースです。  
