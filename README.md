@@ -25,7 +25,7 @@ miibo（会話AI）とRAG検索を組み合わせた、展示会・イベント�
 |---|---|---|
 | 用途 | 動作確認・開発用 | 本番公開用 |
 | APIキー管理 | `js/api_id.js` に直接記述 | Vercel環境変数で管理 |
-| 起動方法 | VSCode Live Server | Vercelにデプロイ |
+| 起動方法 | VSCode Live Server など | Vercelにデプロイ |
 | APIキーの露出 | あり（ブラウザから見える） | なし（サーバーレス関数で隠蔽） |
 
 **基本的な流れ：** `ver_local` でローカル動作確認 → 問題なければ `ver_vercel` をVercelにデプロイ
